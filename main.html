@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  <header class="bg-white shadow-sm">
+    <div class="container mx-auto px-4 py-6 flex items-center gap-4">
+      <img src="https://i.postimg.cc/prHbDyCg/logo.png" alt="Kaimira Logo" class="w-15 h-15 rounded-full">
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-12">
+    <section class="text-center mb-16">
+      <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
+        Stop Spending Hours of Pointless Work Sending Emails
+      </h2>
+      <p class="text-xl text-gray-600 mb-8">
+        Replace your appointment setters and assistants while saving thousands of dollars per month. Our AI-powered solution delivers the same results at a fraction of the cost.
+      </p>
+      <button class="text-lg px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700" onclick="scrollToCalendly()">
+        Get Started Now
+      </button>
+    </section>
+
+    <section class="text-center mb-16 bg-blue-50 rounded-lg p-8">
+      <h3 class="text-3xl font-bold text-gray-900 mb-4">Save Thousands Every Month</h3>
+      <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+        Traditional assistants cost $3,000-5,000/month. Our AI solution delivers superior results starting at a fraction of that cost. Maximize efficiency while minimizing expenses.
+      </p>
+    </section>
+
+    <section class="mb-16">
+      <h3 class="text-2xl font-bold text-gray-800 mb-6">Why Choose Our AI Email Assistant?</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white shadow rounded-lg p-6">
+          <div class="flex items-center mb-4">
+            <svg class="h-8 w-8 text-yellow-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 21h6v2H9v-2z"/><path fill="none" d="M0 0h24v24H0z"/><path d="M7.5 4.5v15l11-7.5-11-7.5z"/></svg>
+            <h4 class="text-xl font-semibold ml-4">Lightning-Fast Responses</h4>
+          </div>
+          <p class="text-gray-600">Generate professional, context-aware email replies in seconds.</p>
+        </div>
+
+        <div class="bg-white shadow rounded-lg p-6">
+          <div class="flex items-center mb-4">
+            <svg class="h-8 w-8 text-green-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8.414l6 6-1.414 1.414L12 11.243l-4.586 4.585L6 14.414l6-6z"/></svg>
+            <h4 class="text-xl font-semibold ml-4">Save Hours Every Week</h4>
+          </div>
+          <p class="text-gray-600">Reduce email management time by up to 75% with AI-powered assistance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-16 text-center" id="calendly">
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">Ready to Transform Your Email Experience?</h3>
+      <p class="text-lg text-gray-600 mb-8">
+        Schedule a free consultation to see how our custom AI email assistant can work for you.
+      </p>
+      <!-- Calendly inline widget begin -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/zac-kpde/30min-meeting" style="min-width:320px;height:700px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <!-- Calendly inline widget end -->
+    </section>
+  </main>
+
+  <footer class="bg-gray-50 border-t">
+    <div class="container mx-auto px-4 py-8">
+      <p class="text-center text-gray-600">
+        © 2025 Kaimira AI. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    function scrollToCalendly() {
+      document.getElementById('calendly').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
