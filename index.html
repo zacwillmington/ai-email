@@ -11,94 +11,114 @@
     }
   </style>
 </head>
-<body class="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-  <header class="bg-white shadow-sm">
-    <div class="container mx-auto px-4 py-6 flex items-center gap-4">
-      Custom AI Automations
+<body class="min-h-screen bg-white text-gray-800">
+  <!-- Header -->
+  <header class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Custom AI Automations</h1>
+      <nav>
+        <a href="#services" class="ml-6 text-gray-300 hover:text-white">Services</a>
+        <a href="#testimonials" class="ml-6 text-gray-300 hover:text-white">Testimonials</a>
+        <a href="#contact" class="ml-6 text-gray-300 hover:text-white">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container mx-auto px-4 py-20">
-    <!-- Hero Section -->
-    <section class="text-center mb-16">
-      <h2 class="text-4xl font-extrabold text-gray-900 mb-5">
-        Revolutionize Your Business with AI-Powered Solutions
+  <!-- Hero Section -->
+  <section class="bg-gray-50 py-20 text-center">
+    <div class="container mx-auto">
+      <h2 class="text-4xl md:text-6xl font-bold mb-6">
+        Unlock Your Business Potential with AI
       </h2>
-      <p class="text-xl text-gray-600 mb-20 mx-auto max-w-4xl">
-        Our AI Appointment Setting, Customer Service, and Lead Generation tools save you time and money while delivering outstanding results. Experience automation like never before.
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+        Revolutionize how you interact with customers, manage leads, and set appointments with our cutting-edge AI solutions.
       </p>
-      <button class="text-lg px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700" onclick="scrollToForm()">
+      <a href="#contact" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
         Get Started
-      </button>
-    </section>
+      </a>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section class="text-center mb-16 bg-blue-50 rounded-lg p-8">
-      <h3 class="text-3xl font-bold text-gray-900 mb-6">Our Services</h3>
+  <!-- Services Section -->
+  <section id="services" class="py-16">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-12">Our AI-Powered Services</h3>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white shadow rounded-lg p-6">
+        <div class="bg-white shadow-lg p-6 rounded-lg">
           <h4 class="text-xl font-semibold mb-4">AI Appointment Setting</h4>
           <p class="text-gray-600">
-            Automate your scheduling with AI-powered tools that efficiently set up appointments, saving time and boosting productivity.
+            Streamline your scheduling process with intelligent, automated appointment setting.
           </p>
         </div>
-        <div class="bg-white shadow rounded-lg p-6">
+        <div class="bg-white shadow-lg p-6 rounded-lg">
           <h4 class="text-xl font-semibold mb-4">AI Customer Service</h4>
           <p class="text-gray-600">
-            Enhance customer satisfaction with AI that provides instant, personalized responses, 24/7.
+            Provide exceptional 24/7 customer service powered by AI, enhancing satisfaction and retention.
           </p>
         </div>
-        <div class="bg-white shadow rounded-lg p-6">
+        <div class="bg-white shadow-lg p-6 rounded-lg">
           <h4 class="text-xl font-semibold mb-4">AI Lead Generation</h4>
           <p class="text-gray-600">
-            Capture and nurture leads with AI tools designed to identify opportunities and drive conversions.
+            Capture high-quality leads efficiently with AI-driven strategies tailored to your needs.
           </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Form Section -->
-    <section class="mb-16 text-center" id="form-section">
-      <h3 class="text-2xl font-bold text-gray-800 mb-4">Take the First Step</h3>
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="bg-gray-100 py-16">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-12">What Our Clients Say</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white shadow-lg p-6 rounded-lg">
+          <p class="text-lg italic mb-4">"The AI appointment setting service saved us hours of manual work. Highly recommend!"</p>
+          <p class="text-sm font-semibold">- John D., Business Owner</p>
+        </div>
+        <div class="bg-white shadow-lg p-6 rounded-lg">
+          <p class="text-lg italic mb-4">"Exceptional AI customer service. Our customers are happier than ever!"</p>
+          <p class="text-sm font-semibold">- Sarah M., Customer Experience Manager</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-8">Get in Touch</h3>
       <p class="text-lg text-gray-600 mb-8">
-        Fill out the form below, and our AI system will reach out to you with tailored solutions.
+        Fill out the form below, and our team will contact you to discuss how our AI solutions can benefit your business.
       </p>
-      <form class="bg-white shadow rounded-lg p-6 max-w-lg mx-auto" action="https://hook.us2.make.com/5784kdai58hqm6v7hi1d7jy11euat969" method="POST">
+      <form class="bg-white shadow-lg p-6 rounded-lg max-w-lg mx-auto" action="https://hook.us2.make.com/5784kdai58hqm6v7hi1d7jy11euat969" method="POST">
         <div class="mb-4">
-          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-          <input type="text" id="name" name="name" class="mt-1 block w-full border border-gray-300 rounded-md p-2 shadow-sm focus:ring-blue-500 focus:border-blue-500" required>
+          <label for="name" class="block text-sm font-medium">Name</label>
+          <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-lg p-2" required>
         </div>
         <div class="mb-4">
-          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-          <input type="email" id="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md p-2 shadow-sm focus:ring-blue-500 focus:border-blue-500" required>
+          <label for="email" class="block text-sm font-medium">Email</label>
+          <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-lg p-2" required>
         </div>
         <div class="mb-4">
-          <label for="service" class="block text-sm font-medium text-gray-700">Interested Service</label>
-          <select id="service" name="service" class="mt-1 block w-full border border-gray-300 rounded-md p-2 shadow-sm focus:ring-blue-500 focus:border-blue-500" required>
+          <label for="service" class="block text-sm font-medium">Service</label>
+          <select id="service" name="service" class="w-full border border-gray-300 rounded-lg p-2" required>
             <option value="AI Appointment Setting">AI Appointment Setting</option>
             <option value="AI Customer Service">AI Customer Service</option>
             <option value="AI Lead Generation">AI Lead Generation</option>
           </select>
         </div>
-        <button type="submit" class="text-lg px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+        <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
           Submit
         </button>
       </form>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="bg-gray-50 border-t">
-    <div class="container mx-auto px-4 py-8">
-      <p class="text-center text-gray-600">
-        © 2023 Custom AI Automations. All rights reserved.
-      </p>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2023 Custom AI Automations. All rights reserved.</p>
     </div>
   </footer>
-
-  <script>
-    function scrollToForm() {
-      document.getElementById('form-section').scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
 </body>
 </html>
