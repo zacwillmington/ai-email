@@ -11,101 +11,95 @@
     }
   </style>
 </head>
-<body class="min-h-screen bg-gradient-to-b from-gray-100 to-white">
+<body class="min-h-screen bg-gradient-to-b from-blue-50 to-white">
   <header class="bg-white shadow-sm">
-    <div class="container mx-auto px-4 py-6 text-center">
-      <h1 class="text-2xl font-bold">Custom AI Automations</h1>
+    <div class="container mx-auto px-4 py-6 flex items-center gap-4">
+      Custom AI Automations
     </div>
   </header>
 
-  <main class="container mx-auto px-4 py-16">
-    <!-- Hero Section -->
-    <section class="text-center mb-16 bg-blue-50 py-12 rounded-lg">
+  <main class="container mx-auto px-4 py-20">
+    <section class="text-center mb-16">
       <h2 class="text-4xl font-extrabold text-gray-900 mb-5">
-        Transform Your Business with AI-Powered Solutions
+        We leverage AI to save money and
+           increase revenue in your business
       </h2>
-      <p class="text-xl text-gray-700 mx-auto max-w-4xl mb-8">
-        Streamline your operations, enhance customer experiences, and grow your revenue with AI Appointment Setting, AI Customer Service, and AI Lead Generation.
+      <p class="text-xl text-gray-600 mb-20 ml-20 mr-20">
+        Replace your appointment setters and assistants while saving thousands of dollars per month. Our AI-powered solution delivers the same results at a fraction of the cost.
       </p>
-      <button class="text-lg px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+      <button class="text-lg px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700" onclick="scrollToCalendly()">
         Book A Demo
       </button>
     </section>
 
-    <!-- Services Section -->
-    <section class="text-center mb-16 bg-gray-50 py-12 rounded-lg">
-      <h3 class="text-3xl font-bold text-gray-900 mb-6">Our AI-Powered Services</h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white shadow-md rounded-lg p-6">
-          <h4 class="text-xl font-semibold mb-4">AI Appointment Setting</h4>
-          <p class="text-gray-600">
-            Automate your scheduling with intelligent tools that efficiently manage appointments, saving you time and increasing productivity.
-          </p>
-        </div>
-        <div class="bg-white shadow-md rounded-lg p-6">
-          <h4 class="text-xl font-semibold mb-4">AI Customer Service</h4>
-          <p class="text-gray-600">
-            Elevate customer satisfaction with 24/7 AI-driven assistance that delivers fast, accurate, and personalized support.
-          </p>
-        </div>
-        <div class="bg-white shadow-md rounded-lg p-6">
-          <h4 class="text-xl font-semibold mb-4">AI Lead Generation</h4>
-          <p class="text-gray-600">
-            Capture, nurture, and convert leads with AI tools designed to identify opportunities and drive sales growth.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="text-center mb-16 bg-blue-50 py-12 rounded-lg">
-      <h3 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Custom AI Automations?</h3>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white shadow-md rounded-lg p-6">
-          <h4 class="text-xl font-semibold mb-4">Maximize Efficiency</h4>
-          <p class="text-gray-600">
-            Our AI tools handle repetitive tasks quickly and accurately, freeing up your team for high-value work.
-          </p>
-        </div>
-        <div class="bg-white shadow-md rounded-lg p-6">
-          <h4 class="text-xl font-semibold mb-4">Save Thousands Every Month</h4>
-          <p class="text-gray-600">
-            Reduce overhead costs by replacing manual processes with affordable, scalable AI solutions.
-          </p>
-        </div>
-        <div class="bg-white shadow-md rounded-lg p-6">
-          <h4 class="text-xl font-semibold mb-4">Always-On Availability</h4>
-          <p class="text-gray-600">
-            Deliver seamless customer service and engagement 24/7 with no downtime.
-          </p>
-        </div>
-        <div class="bg-white shadow-md rounded-lg p-6">
-          <h4 class="text-xl font-semibold mb-4">Customized for Your Needs</h4>
-          <p class="text-gray-600">
-            Our AI solutions are tailored to fit your business goals and deliver measurable results.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section class="text-center mb-16 bg-gray-50 py-12 rounded-lg" id="calendly">
-      <h3 class="text-3xl font-bold text-gray-900 mb-6">Ready to Transform Your Business?</h3>
-      <p class="text-lg text-gray-700 mx-auto max-w-3xl mb-8">
-        Schedule a free consultation to see how Custom AI Automations can help you achieve your goals.
+    <section class="text-center mb-16 bg-blue-50 rounded-lg p-8">
+      <h3 class="text-3xl font-bold text-gray-900 mb-4">Save Thousands Every Month</h3>
+      <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+        Traditional assistants cost $3,000-5,000/month. Our AI solution delivers superior results starting at a fraction of that cost. Maximize efficiency while minimizing expenses.
       </p>
-      <!-- Calendly Widget -->
-      <div class="calendly-inline-widget" data-url="https://calendly.com/zac-kpde/custom-ai-automations" style="min-width:320px;height:700px;"></div>
+    </section>
+
+    <section class="mb-16">
+      <h3 class="text-2xl font-bold text-gray-800 mb-6">Why Choose Our AI Assistants?</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white shadow rounded-lg p-6">
+          <div class="flex items-center mb-4">
+            <svg class="h-8 w-8 text-yellow-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 21h6v2H9v-2z"/><path fill="none" d="M0 0h24v24H0z"/><path d="M7.5 4.5v15l11-7.5-11-7.5z"/></svg>
+            <h4 class="text-xl font-semibold ml-4">Lightning-Fast Responses</h4>
+          </div>
+          <p class="text-gray-600">Generate professional, context-aware email replies in seconds.</p>
+        </div>
+
+        <div class="bg-white shadow rounded-lg p-6">
+          <div class="flex items-center mb-4">
+            <svg class="h-8 w-8 text-green-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8.414l6 6-1.414 1.414L12 11.243l-4.586 4.585L6 14.414l6-6z"/></svg>
+            <h4 class="text-xl font-semibold ml-4">Save Hours Every Week</h4>
+          </div>
+          <p class="text-gray-600">Reduce email management time by up to 75% with AI-powered assistance.</p>
+        </div>
+
+        <div class="bg-white shadow rounded-lg p-6">
+          <div class="flex items-center mb-4">
+            <svg class="h-8 w-8 text-purple-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <h4 class="text-xl font-semibold ml-4">Personalized to Your Style</h4>
+          </div>
+          <p class="text-gray-600">Our AI learns your writing and speak style and tone for authentic communication.</p>
+        </div>
+
+        <div class="bg-white shadow rounded-lg p-6">
+          <div class="flex items-center mb-4">
+            <svg class="h-8 w-8 text-blue-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2c-4.42 0-8 3.58-8 8 0 4.41 3.59 8 8 8 4.41 0 8-3.59 8-8 0-4.42-3.58-8-8-8zm3.46 9.53l-3.19 3.19c-.39.39-1.02.39-1.42 0l-1.42-1.42c-.39-.39-.39-1.03 0-1.42.39-.39 1.03-.39 1.42 0l.71.71 2.48-2.48c.39-.39 1.03-.39 1.42 0 .38.39.38 1.02-.01 1.42z"/></svg>
+            <h4 class="text-xl font-semibold ml-4">Smart Inbox Management</h4>
+          </div>
+          <p class="text-gray-600">Automatically prioritize, categorize, and summarize your emails.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-16 text-center" id="calendly">
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">Ready to Transform Your Business?</h3>
+      <p class="text-lg text-gray-600 mb-8">
+        Schedule a free consultation to see how our custom AI assistants can work for you.
+      </p>
+      <!-- Calendly inline widget begin -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/zac-kpde/custom-ai-automations-ai-email-system-call-clone" style="min-width:320px;height:700px;"></div>
       <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <!-- Calendly inline widget end -->
     </section>
   </main>
 
   <footer class="bg-gray-50 border-t">
-    <div class="container mx-auto px-4 py-8 text-center">
-      <p class="text-gray-600">
+    <div class="container mx-auto px-4 py-8">
+      <p class="text-center text-gray-600">
         © 2023 Custom AI Automations. All rights reserved.
       </p>
     </div>
   </footer>
+
+  <script>
+    function scrollToCalendly() {
+      document.getElementById('calendly').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
